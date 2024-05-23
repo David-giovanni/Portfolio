@@ -14,11 +14,12 @@ root.render(
 export const EXPERIENCES = [
   {
     year: "2023 - Present",
-    role: "Senior Full Stack Developer",
-    company: "Google",
+    role: "Full Stack Developer",
+    company: "SETITEC",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vel erat in urna tincidunt ornare. Donec at nisi sit amet",
     technologies: ["Javascript", "React", "Node.js", "Express"],
+    technologies2: ["Redux", "GraphQL", "RESTful API"],
   },
   {
     year: "2023 - Present",

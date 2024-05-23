@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const Experience = () => {
   return (
-    <div className="border-b border-neutral-900 pb-4">
+    <div id="experience" className="border-b border-neutral-900 pb-4">
       <h1 className="text-white my-20 text-center text-4xl font-bold">
         Experience
       </h1>

@@ -20,7 +20,10 @@ const iconVariants = (duration) => ({
 
 const Technologies = () => {
   return (
-    <div className="text-white border-b border-neutral-800 pb-24">
+    <div
+      id="technologies"
+      className="text-white border-b border-neutral-800 pb-24 xl:px-40"
+    >
       <motion.h1
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
@@ -41,7 +44,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <RiReactjsLine className="text-7xl text-cyan-400" />
+          <RiReactjsLine className="text-7xl text-cyan-400 bg-white rounded-xl" />
         </motion.div>
         <motion.div
           variants={iconVariants(5)}
@@ -57,7 +60,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <SiMongodb className="text-7xl text-cyan-400" />
+          <SiMongodb className="text-7xl text-green-400" />
         </motion.div>
         <motion.div
           variants={iconVariants(2.5)}
@@ -65,7 +68,7 @@ const Technologies = () => {
           animate="animate"
           className="rounded-2xl border-4 border-neutral-800 p-4"
         >
-          <FaNodeJs className="text-7xl text-cyan-400" />
+          <FaNodeJs className="text-7xl text-black bg-yellow-500 rounded-xl" />
         </motion.div>
         <motion.div
           variants={iconVariants(6)}
