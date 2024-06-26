@@ -9,7 +9,7 @@ import Contact from "./Contact";
 
 const Home = () => {
   return (
-    <div className="bg-black min-h-screen">
+    <div className="min-h-screen bg-black">
       <Navbar />
       <div className="xl:pt-20 xl:px-28 p-10">
         <Hero />
