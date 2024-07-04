@@ -8,6 +8,7 @@ import Technologies from "./Components/Technologies";
 import Experience from "./Components/Experience";
 import Projects from "./Components/Projects";
 import Contact from "./Components/Contact";
+import Currently from "./Components/Currently";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/experience" element={<Experience />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/currently" element={<Currently />} />
         </Routes>
       </div>
     </Router>

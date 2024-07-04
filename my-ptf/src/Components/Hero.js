@@ -1,5 +1,5 @@
 import React from "react";
-import moi from "../Assets/moi.jpg";
+import Home from "../Assets/Home.jpg";
 import { motion } from "framer-motion";
 
 const container = (delay) => ({
@@ -37,37 +37,38 @@ const Hero = () => {
               variants={container(1)}
               initial="hidden"
               animate="visible"
-              className="text-white my-2 max-w-xl py-6 font-light tracking-tighter"
+              className="text-white my-2 max-w-xl py-6 font-thin tracking-tighter"
             >
-              I am a Full Stack Developer with a passion for creating innovative
-              software solutions. I have experience in developing web
-              applications using modern technologies such as React, Node.js, and
-              MongoDB. I am always eager to learn new technologies and improve
-              my skills. I am currently seeking new opportunities to work on
-              exciting projects and collaborate with other developers. I am a
-              Full Stack Developer with a passion for creating innovative
-              software solutions. I have experience in developing web
-              applications using modern technologies such as React, Node.js, and
-              MongoDB. I am always eager to learn new technologies and improve
-              my skills. I am currently seeking new opportunities to work on
-              exciting projects and collaborate with other developers. I am a
-              Full Stack Developer with a passion for creating innovative
-              software solutions. I have experience in developing web
-              applications using modern technologies such as React, Node.js, and
-              MongoDB. I am always eager to learn new technologies and improve
-              my skills. I am currently seeking new opportunities to work on
-              exciting projects and collaborate with other developers.
+              I am a dedicated Full Stack Developer with a strong passion for
+              crafting innovative software solutions. With hands-on experience
+              in developing dynamic web applications using cutting-edge
+              technologies like React, Node.js, and MongoDB, I thrive on solving
+              complex challenges and delivering robust solutions.
+              <br />I am continually expanding my skill set and staying updated
+              with emerging technologies to ensure efficiency and excellence in
+              my work. My enthusiasm for learning drives me to explore new
+              frameworks and methodologies, constantly improving my proficiency.
+              Currently, I am pursuing my studies at Epitech Paris, anticipating
+              graduation in August 2025.
+              <br />
+              This educational journey complements my practical experience,
+              providing me with a comprehensive understanding of software
+              development principles and best practices. I am eager to leverage
+              my skills and knowledge in a new opportunity where I can
+              contribute to exciting projects, collaborate with talented
+              developers, and make a meaningful impact in the field of
+              technology.
             </motion.p>
           </div>
         </div>
-        <div className="w-full lg:w-1/2 lg:p-16">
+        <div className="w-96 lg:w-1/2 m-auto">
           <div className="flex justify-center rounded-xl">
             <motion.img
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 1.2 }}
               className="rounded-3xl"
-              src={moi}
+              src={Home}
               alt=""
             ></motion.img>
           </div>

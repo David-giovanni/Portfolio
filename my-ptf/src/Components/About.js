@@ -1,40 +1,60 @@
 import React from "react";
-import moi from "../Assets/moi.jpg";
+import cv from "../Assets/cv.png";
+import CV from "../Assets/CVgio.pdf";
 import { motion } from "framer-motion";
 
 const About = () => {
+  const handleDownload = () => {
+    const link = document.createElement("a");
+    link.href = CV;
+    link.download = "Doroftei_David_Giovanni_CV.pdf";
+    link.click();
+  };
+
   return (
-    <div id="about-me" className="border-b border-neutral-900 pb-4">
+    <div
+      id="about-me"
+      className="border-b border-neutral-900 pt-48 pb-4 justify-center"
+    >
       <h1 className="text-white font-bold my-20 text-center text-4xl">
-        About
-        <span className="text-neutral-500"> Me</span>
+        My <span className="text-neutral-500">Resume</span>
       </h1>
-      <div className="flex flex-wrap">
+      <div className="justify-center flex">
         <motion.div
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 0.5 }}
           className="w-full lg:w-1/2 lg:p-8"
         >
-          <div className="flex items-center justify-center">
-            <img className="rounded-3xl" src={moi} alt="Me"></img>
-          </div>
-        </motion.div>
-        <motion.div
-          whileInView={{ opacity: 1, y: 0 }}
-          initial={{ opacity: 0, y: 100 }}
-          transition={{ duration: 0.5 }}
-          className="w-full lg:w-1/2 lg:p-8"
-        >
-          <div className="flex justify-center lg:justify-start">
-            <p className="text-white pt-20 my-2 max-w-xl py-6 font-light tracking-tighter">
-              I am a Full Stack Developer with a passion for creating innovative
-              software solutions. I have experience in developing web
-              applications using modern technologies such as React, Node.js, and
-              MongoDB. I am always eager to learn new technologies and improve
-              my skills. I am currently seeking new opportunities to work on
-              exciting projects and collaborate with other developers.
-            </p>
+          <div className="xl:flex xl:gap-20 items-center justify-center">
+            <div>
+              <img className="rounded-3xl filter blur-sm" src={cv} alt="Me" />
+              <motion.button
+                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, x: 0 }}
+                transition={{ duration: 1 }}
+                className="bg-gradient-to-r from-purple-400 via-blue-300 to-purple-500 flex m-auto text-white py-2 px-4 rounded-md mt-4 shadow-md transition duration-300 ease-in-out"
+                onClick={handleDownload}
+              >
+                DOWNLOAD CV IN ENGLISH
+              </motion.button>
+            </div>
+            <div>
+              <img
+                className="rounded-3xl filter blur-sm mt-4 xl:mt-0"
+                src={cv}
+                alt="Me"
+              />
+              <motion.button
+                whileInView={{ opacity: 1, x: 0 }}
+                initial={{ opacity: 0, x: 0 }}
+                transition={{ duration: 1 }}
+                className="bg-gradient-to-r from-purple-400 via-blue-300 to-purple-500 flex m-auto text-white py-2 px-4 rounded-md mt-4 shadow-md transition duration-300 ease-in-out"
+                onClick={handleDownload}
+              >
+                DOWNLOAD CV IN FRENCH
+              </motion.button>
+            </div>
           </div>
         </motion.div>
       </div>

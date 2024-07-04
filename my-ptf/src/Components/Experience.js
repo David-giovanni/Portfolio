@@ -18,6 +18,13 @@ const Experience = () => {
               className="w-full lg:w-1/4"
             >
               <p className="mb-2 text-sm text-neutral-400">{experience.year}</p>
+              <img
+                className="rounded-xl"
+                src={experience.image}
+                width={230}
+                height={0}
+                alt=""
+              ></img>
             </motion.div>
             <div
               whileInView={{ opacity: 1, x: 0 }}
@@ -32,14 +39,16 @@ const Experience = () => {
                 </span>
               </h6>
               <p className="mb-4 text-neutral-400">{experience.description}</p>
-              {experience.technologies.map((tech, index) => (
-                <span
-                  key={index}
-                  className="mr-2 mt-4 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-800"
-                >
-                  {tech}
-                </span>
-              ))}
+              <div className="flex flex-wrap">
+                {experience.technologies.map((tech, index) => (
+                  <span
+                    key={index}
+                    className="mr-2 mt-4 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-800"
+                  >
+                    {tech}
+                  </span>
+                ))}
+              </div>
             </div>
           </div>
         ))}

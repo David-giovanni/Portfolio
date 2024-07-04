@@ -6,6 +6,7 @@ import Technologies from "./Technologies";
 import Experience from "./Experience";
 import Projects from "./Projects";
 import Contact from "./Contact";
+import Currently from "./Currently";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Navbar />
       <div className="xl:pt-20 xl:px-28 p-10">
         <Hero />
+        <Currently />
         <About />
         <Technologies />
         <Experience />
