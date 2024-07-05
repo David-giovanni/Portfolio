@@ -1,9 +1,14 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div className="">
+    <motion.div
+      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: 100 }}
+      transition={{ duration: 1.5 }}
+    >
       <div id="contact" className="text-white border-neutral-900">
         <div
           whileInView={{ opacity: 1, y: 0 }}
@@ -12,15 +17,29 @@ const Contact = () => {
           className="mt-10 text-center text-4xl font-bold"
         >
           Get in Touch
-          <div className="text-center tracking-tighter pt-10 font-normal">
+          <div className="text-center pt-10 font-normal">
             <p className="my-4 text-xl text-neutral-500">07 69 16 82 69</p>
             <p className="my-4 text-xl text-neutral-500">
               Giovani.doroftei00@gmail.com
             </p>
+            <div className="flex justify-center gap-2">
+              <a
+                href="https://github.com/David-giovanni"
+                className="text-neutral-500 hover:text-white flex justify-center items-center"
+              >
+                <FaGithub icon={FaGithub} className="" />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/david-giovanni-doroftei/"
+                className="text-neutral-500 hover:text-white flex justify-center items-center"
+              >
+                <FaLinkedin icon={FaLinkedin} className="" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div className="flex flex-col justify-center items-center">
+      <div className="flex flex-col justify-center items-center pt-5">
         <div className=" text-white text-center">
           <form
             action="https://formspree.io/f/xvgpovgp"
@@ -82,7 +101,7 @@ const Contact = () => {
           </form>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

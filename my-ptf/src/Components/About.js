@@ -37,7 +37,7 @@ const About = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   initial={{ opacity: 0, x: 0 }}
                   transition={{ duration: 1 }}
-                  className="bg-gradient-to-r from-purple-400 via-blue-300 to-purple-500 flex m-auto text-white py-2 px-4 rounded-md mt-4 shadow-md transition duration-300 ease-in-out"
+                  className="bg-gradient-to-r from-purple-400 via-blue-300 to-purple-500 flex m-auto text-white py-2 px-4 rounded-xl mt-4 shadow-md transition duration-300 ease-in-out"
                   onClick={handleDownload}
                 >
                   DOWNLOAD CV IN ENGLISH
@@ -46,7 +46,7 @@ const About = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   initial={{ opacity: 0, x: 0 }}
                   transition={{ duration: 1 }}
-                  className="bg-gradient-to-r from-purple-400 via-blue-300 to-purple-500 flex m-auto text-white py-2 px-4 rounded-md mt-4 shadow-md transition duration-300 ease-in-out"
+                  className="bg-gradient-to-r from-purple-400 via-blue-300 to-purple-500 flex m-auto  text-white py-2 px-4 rounded-xl mt-4 shadow-md transition duration-300 ease-in-out"
                   onClick={handleDownload}
                 >
                   DOWNLOAD CV IN FRENCH
