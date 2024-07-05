@@ -1,12 +1,20 @@
 import React from "react";
 import cv from "../Assets/cv.png";
-import CV from "../Assets/CVgio.pdf";
+import CVFrancais from "../Assets/CVgio.pdf";
+import CVAnglais from "../Assets/CV Gio Anglais.pdf";
 import { motion } from "framer-motion";
 
 const About = () => {
   const handleDownload = () => {
     const link = document.createElement("a");
-    link.href = CV;
+    link.href = CVFrancais;
+    link.download = "Doroftei_David_Giovanni_CV.pdf";
+    link.click();
+  };
+
+  const handleDownload2 = () => {
+    const link = document.createElement("a");
+    link.href = CVAnglais;
     link.download = "Doroftei_David_Giovanni_CV.pdf";
     link.click();
   };
@@ -38,7 +46,7 @@ const About = () => {
                   initial={{ opacity: 0, x: 0 }}
                   transition={{ duration: 1 }}
                   className="bg-gradient-to-r from-purple-400 via-blue-300 to-purple-500 flex m-auto text-white py-2 px-4 rounded-xl mt-4 shadow-md transition duration-300 ease-in-out"
-                  onClick={handleDownload}
+                  onClick={handleDownload2}
                 >
                   DOWNLOAD CV IN ENGLISH
                 </motion.button>
