@@ -2,8 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
-import Pro from "./Assets/image.jpg";
 import logo from "./Assets/logo.png";
+import Dashboard from "./Assets/Dashboard.jpg";
+import Crypto from "./Assets/Crypto.jpg";
+import Travel from "./Assets/Travel.jpg";
+import Restaurant from "./Assets/Restaurant.png";
+import Setitec from "./Assets/setitec.png";
+import Powerbi from "./Assets/Powerbi.png";
+import CarReservation from "./Assets/CarReservation.jpg";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -41,49 +47,49 @@ export const EXPERIENCES = [
 export const PROJECTS = [
   {
     title: "Dashboard / Epitech",
-    image: Pro,
+    image: Dashboard,
     description:
       "I developed a dashboard website that integrates multiple APIs, providing users with comprehensive and real-time data visualization and analytics.",
     technologies: ["React", "Tailwind", "Gradle", "PHP"],
   },
   {
     title: "Cryptocurrency Website / Epitech",
-    image: Pro,
+    image: Crypto,
     description:
       "I developed a website dedicated to cryptocurrency, allowing users to track real-time prices, analyze market trends, and securely manage their investment portfolios.",
     technologies: ["React", "Node.js", "Express", "MongoDB", "Docker"],
   },
   {
     title: "Travel Planning Website / Epitech",
-    image: Pro,
+    image: Travel,
     description:
       "I developed a website that allows users to plan their trips, providing comprehensive information on hotels, restaurants, and other travel-related services.",
     technologies: ["React", "Tailwind", "Node.js", "Express", "MariaDB"],
   },
   {
     title: "Reservation Website / Epitech",
-    image: Pro,
+    image: Restaurant,
     description:
       "I developed a website that enables users to place orders directly from their phones using a QR code, streamlining the ordering process for enhanced convenience.",
     technologies: ["React", "Node.js", "Express", "PostgreSQL", "Docker"],
   },
   {
     title: "Showcase Website / Setitec",
-    image: Pro,
+    image: Setitec,
     description:
       "I developed a showcase website for Setitec, highlighting the company's services, expertise, and portfolio to effectively present their offerings to potential clients.",
     technologies: ["React", "Tailwind"],
   },
   {
     title: "Car Reservation Website / Setitec",
-    image: Pro,
+    image: CarReservation,
     description:
       "I developed a website that allows users to reserve company cars for specific dates, streamlining the booking process and ensuring vehicle availability.",
     technologies: ["React", "Tailwind", "Node.js", "Express", "PostgreSQL"],
   },
   {
     title: "Power BI Dashboard / Setitec",
-    image: Pro,
+    image: Powerbi,
     description:
       "I have created multiple Power BI dashboards, providing insightful data visualizations and analytics to support informed decision-making.",
     technologies: ["Power BI"],

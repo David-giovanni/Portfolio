@@ -3,7 +3,7 @@ import Home from "../Assets/Home.jpg";
 
 const Currently = () => {
   return (
-    <div className="relative w-full h-full flex justify-center items-center xl:pt-60">
+    <div className="relative w-full h-full flex justify-center items-center xl:pt-60 pt-60">
       <img
         className="absolute w-full h-96 blur object-cover z-0"
         src={Home}

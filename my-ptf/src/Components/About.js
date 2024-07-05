@@ -24,36 +24,34 @@ const About = () => {
           whileInView={{ opacity: 1, x: 0 }}
           initial={{ opacity: 0, x: -100 }}
           transition={{ duration: 0.5 }}
-          className="w-full lg:w-1/2 lg:p-8"
         >
-          <div className="xl:flex xl:gap-20 items-center justify-center">
-            <div>
-              <img className="rounded-3xl filter blur-sm" src={cv} alt="Me" />
-              <motion.button
-                whileInView={{ opacity: 1, x: 0 }}
-                initial={{ opacity: 0, x: 0 }}
-                transition={{ duration: 1 }}
-                className="bg-gradient-to-r from-purple-400 via-blue-300 to-purple-500 flex m-auto text-white py-2 px-4 rounded-md mt-4 shadow-md transition duration-300 ease-in-out"
-                onClick={handleDownload}
-              >
-                DOWNLOAD CV IN ENGLISH
-              </motion.button>
-            </div>
+          <div className="xl:gap-20 items-center justify-center">
             <div>
               <img
-                className="rounded-3xl filter blur-sm mt-4 xl:mt-0"
+                className="rounded-3xl m-auto w-96 filter blur-sm"
                 src={cv}
                 alt="Me"
               />
-              <motion.button
-                whileInView={{ opacity: 1, x: 0 }}
-                initial={{ opacity: 0, x: 0 }}
-                transition={{ duration: 1 }}
-                className="bg-gradient-to-r from-purple-400 via-blue-300 to-purple-500 flex m-auto text-white py-2 px-4 rounded-md mt-4 shadow-md transition duration-300 ease-in-out"
-                onClick={handleDownload}
-              >
-                DOWNLOAD CV IN FRENCH
-              </motion.button>
+              <div className="xl:flex xl:gap-5">
+                <motion.button
+                  whileInView={{ opacity: 1, x: 0 }}
+                  initial={{ opacity: 0, x: 0 }}
+                  transition={{ duration: 1 }}
+                  className="bg-gradient-to-r from-purple-400 via-blue-300 to-purple-500 flex m-auto text-white py-2 px-4 rounded-md mt-4 shadow-md transition duration-300 ease-in-out"
+                  onClick={handleDownload}
+                >
+                  DOWNLOAD CV IN ENGLISH
+                </motion.button>
+                <motion.button
+                  whileInView={{ opacity: 1, x: 0 }}
+                  initial={{ opacity: 0, x: 0 }}
+                  transition={{ duration: 1 }}
+                  className="bg-gradient-to-r from-purple-400 via-blue-300 to-purple-500 flex m-auto text-white py-2 px-4 rounded-md mt-4 shadow-md transition duration-300 ease-in-out"
+                  onClick={handleDownload}
+                >
+                  DOWNLOAD CV IN FRENCH
+                </motion.button>
+              </div>
             </div>
           </div>
         </motion.div>
