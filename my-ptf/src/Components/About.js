@@ -22,7 +22,7 @@ const About = () => {
   return (
     <div
       id="about-me"
-      className="border-b border-neutral-900 pt-48 pb-4 justify-center"
+      className="border-b border-neutral-900 pt-48 pb-24 justify-center"
     >
       <h1 className="text-white font-bold my-20 text-center text-4xl">
         My <span className="text-neutral-500">Resume</span>

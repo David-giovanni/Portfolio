@@ -11,6 +11,10 @@ const container = (delay) => ({
   },
 });
 
+const preventContextMenu = (e) => {
+  e.preventDefault();
+};
+
 const Hero = () => {
   return (
     <div className="border-b border-neutral-900 pb-4 lg:mb-35">
@@ -62,15 +66,18 @@ const Hero = () => {
           </div>
         </div>
         <div className="w-96 lg:w-1/2 m-auto">
-          <div className="flex justify-center rounded-xl">
+          <div className="relative flex justify-center rounded-xl">
             <motion.img
               initial={{ x: 100, opacity: 0 }}
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 1.2 }}
               className="rounded-3xl w-96"
               src={Gio}
-              alt=""
-            ></motion.img>
+              alt="Doroftei David Giovanni"
+              onContextMenu={preventContextMenu}
+              draggable="false"
+            />
+            <div className="absolute top-0 left-0 w-full h-full bg-transparent"></div>
           </div>
         </div>
       </div>
