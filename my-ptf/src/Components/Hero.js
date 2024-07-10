@@ -1,5 +1,5 @@
 import React from "react";
-import Home from "../Assets/moi.JPG";
+import Gio from "../Assets/PhotoMoi.JPG";
 import { motion } from "framer-motion";
 
 const container = (delay) => ({
@@ -68,7 +68,7 @@ const Hero = () => {
               animate={{ x: 0, opacity: 1 }}
               transition={{ duration: 1, delay: 1.2 }}
               className="rounded-3xl w-96"
-              src={Home}
+              src={Gio}
               alt=""
             ></motion.img>
           </div>

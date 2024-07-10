@@ -1,15 +1,26 @@
 {
   "files": {
-    "main.css": "/static/css/main.d62a3e50.css",
-    "main.js": "/static/js/main.46602d96.js",
-    "static/media/image.jpg": "/static/media/image.1c6c42953bae891d63eb.jpg",
-    "static/media/moi.jpg": "/static/media/moi.d3e54854cb8a49f168f9.jpg",
+    "main.css": "/static/css/main.ebcb8f3f.css",
+    "main.js": "/static/js/main.90f368c2.js",
+    "static/media/Dashboard.jpg": "/static/media/Dashboard.1f7490a32ec9cad699e3.jpg",
+    "static/media/Home.jpg": "/static/media/Home.f76256e87395853f1bc6.jpg",
+    "static/media/CVgio.pdf": "/static/media/CVgio.df11a06c0c7a28d16b32.pdf",
+    "static/media/CV Gio Anglais.pdf": "/static/media/CV Gio Anglais.4aa083930d13842d8afd.pdf",
+    "static/media/setitec.png": "/static/media/setitec.9197c0e4cb9382b2207a.png",
+    "static/media/Restaurant.png": "/static/media/Restaurant.91ef40b1e8081634e98e.png",
+    "static/media/moi.JPG": "/static/media/moi.9dca5cc99cb420e9af97.JPG",
+    "static/media/Travel.jpg": "/static/media/Travel.b18478d810e350f080f3.jpg",
+    "static/media/cv.png": "/static/media/cv.93cd3fc985cd98bd455d.png",
+    "static/media/logo.png": "/static/media/logo.8a5260f7e3101341821e.png",
+    "static/media/Crypto.jpg": "/static/media/Crypto.36fbedeba4017fac0365.jpg",
+    "static/media/CarReservation.jpg": "/static/media/CarReservation.d43a9a2e2eaaebcbcb8a.jpg",
+    "static/media/Powerbi.png": "/static/media/Powerbi.6858e6893c1c0204d2dc.png",
     "index.html": "/index.html",
-    "main.d62a3e50.css.map": "/static/css/main.d62a3e50.css.map",
-    "main.46602d96.js.map": "/static/js/main.46602d96.js.map"
+    "main.ebcb8f3f.css.map": "/static/css/main.ebcb8f3f.css.map",
+    "main.90f368c2.js.map": "/static/js/main.90f368c2.js.map"
   },
   "entrypoints": [
-    "static/css/main.d62a3e50.css",
-    "static/js/main.46602d96.js"
+    "static/css/main.ebcb8f3f.css",
+    "static/js/main.90f368c2.js"
   ]
 }
