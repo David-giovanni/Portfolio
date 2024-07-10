@@ -1,5 +1,5 @@
 import React from "react";
-import Home from "../Assets/moi.png";
+import Home from "../Assets/moi.JPG";
 import { motion } from "framer-motion";
 
 const container = (delay) => ({
