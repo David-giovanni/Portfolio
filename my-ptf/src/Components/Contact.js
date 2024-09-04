@@ -40,65 +40,67 @@ const Contact = () => {
         </div>
       </div>
       <div className="flex flex-col justify-center items-center pt-5">
-        <div className=" text-white text-center">
-          <form
-            action="https://formspree.io/f/xvgpovgp"
-            method="POST"
-            className=" border border-y-2 border-x-2 border-purple-500 bg-opacity-80 xl:w-96 p-4 rounded-md"
-          >
-            <div className="mb-4">
-              <label
-                className="block text-white text-sm font-bold mb-2"
-                htmlFor="name"
-              >
-                Nom
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                required
-                className="w-full px-3 py-2 text-black bg-neutral-400 rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-              />
-            </div>
-            <div className="mb-4">
-              <label
-                className="block text-white text-sm font-bold mb-2"
-                htmlFor="email"
-              >
-                E-mail
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                required
-                className="w-full px-3 py-2 bg-neutral-400 text-black rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-              />
-            </div>
-            <div className="mb-4">
-              <label
-                className="block text-white text-sm font-bold mb-2"
-                htmlFor="message"
-              >
-                Message
-              </label>
-              <textarea
-                id="message"
-                name="message"
-                required
-                className="w-full px-3 py-2 text-black bg-neutral-400 rounded shadow appearance-none focus:outline-none focus:shadow-outline"
-              ></textarea>
-            </div>
-            <div className="flex items-center justify-between">
-              <button
-                type="submit"
-                className="hover:bg-neutral-700 text-white duration-150 m-auto font-bold py-2 px-4 rounded-xl focus:outline-none focus:shadow-outline"
-              >
-                Envoyer
-              </button>
-            </div>
-          </form>
+        <div className="bg-gradient-to-r from-purple-800 via-purple-500 to-blue-800 p-1 rounded-lg shadow-lg">
+          <div className="bg-opacity-80 bg-gray-900 rounded-lg p-6 text-white text-center">
+            <form
+              action="https://formspree.io/f/xvgpovgp"
+              method="POST"
+              className="xl:w-96"
+            >
+              <div className="mb-4">
+                <label
+                  className="block text-white text-sm font-semibold mb-2"
+                  htmlFor="name"
+                >
+                  Nom
+                </label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  className="w-full px-4 py-2 text-white bg-gray-700 bg-opacity-75 rounded-lg shadow-inner focus:outline-none focus:ring-2 focus:ring-purple-400"
+                />
+              </div>
+              <div className="mb-4">
+                <label
+                  className="block text-white text-sm font-semibold mb-2"
+                  htmlFor="email"
+                >
+                  E-mail
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  className="w-full px-4 py-2 text-white bg-gray-700 bg-opacity-75 rounded-lg shadow-inner focus:outline-none focus:ring-2 focus:ring-purple-400"
+                />
+              </div>
+              <div className="mb-4">
+                <label
+                  className="block text-white text-sm font-semibold mb-2"
+                  htmlFor="message"
+                >
+                  Message
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  required
+                  className="w-full px-4 py-2 text-white bg-gray-700 bg-opacity-75 rounded-lg shadow-inner focus:outline-none focus:ring-2 focus:ring-purple-400"
+                ></textarea>
+              </div>
+              <div className="flex items-center justify-center">
+                <button
+                  type="submit"
+                  className="bg-purple-800 hover:bg-purple-600 duration-300 text-white font-bold py-2 px-6 rounded-full"
+                >
+                  Envoyer
+                </button>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </motion.div>

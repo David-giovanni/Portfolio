@@ -7,9 +7,8 @@ import Dashboard from "./Assets/Dashboard.jpg";
 import Crypto from "./Assets/Crypto.jpg";
 import Travel from "./Assets/Travel.jpg";
 import Restaurant from "./Assets/Restaurant.png";
-import Setitec from "./Assets/setitec.png";
-import Powerbi from "./Assets/Powerbi.png";
 import CarReservation from "./Assets/CarReservation.jpg";
+import { FaGithub } from "react-icons/fa";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -51,6 +50,11 @@ export const PROJECTS = [
     description:
       "I developed a dashboard website that integrates multiple APIs, providing users with comprehensive and real-time data visualization and analytics.",
     technologies: ["React", "Tailwind", "Gradle", "PHP"],
+    lien: [
+      <a href="https://github.com/David-giovanni/car_reservation">
+        <FaGithub icon={FaGithub} className="" />
+      </a>,
+    ],
   },
   {
     title: "Cryptocurrency Website / Epitech",
@@ -73,25 +77,12 @@ export const PROJECTS = [
       "I developed a website that enables users to place orders directly from their phones using a QR code, streamlining the ordering process for enhanced convenience.",
     technologies: ["React", "Node.js", "Express", "PostgreSQL", "Docker"],
   },
-  {
-    title: "Showcase Website / Setitec",
-    image: Setitec,
-    description:
-      "I developed a showcase website for Setitec, highlighting the company's services, expertise, and portfolio to effectively present their offerings to potential clients.",
-    technologies: ["React", "Tailwind"],
-  },
+
   {
     title: "Car Reservation Website / Setitec",
     image: CarReservation,
     description:
       "I developed a website that allows users to reserve company cars for specific dates, streamlining the booking process and ensuring vehicle availability.",
     technologies: ["React", "Tailwind", "Node.js", "Express", "PostgreSQL"],
-  },
-  {
-    title: "Power BI Dashboard / Setitec",
-    image: Powerbi,
-    description:
-      "I have created multiple Power BI dashboards, providing insightful data visualizations and analytics to support informed decision-making.",
-    technologies: ["Power BI"],
   },
 ];
