@@ -84,7 +84,7 @@ const Technologies = () => {
       component: <FaJava className="text-7xl text-black bg-white rounded-xl" />,
       label: "Java",
       duration: 2.5,
-      progress: 60,
+      progress: 50,
     },
     {
       component: <SiDocker className="text-7xl text-blue-400" />,

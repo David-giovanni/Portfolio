@@ -41,7 +41,7 @@ const Hero = () => {
               variants={container(1)}
               initial="hidden"
               animate="visible"
-              className="text-white my-2 max-w-xl py-6 font-thin tracking-tighter"
+              className="text-white my-2 max-w-xl py-6 tracking-tighter"
             >
               I am a dedicated Full Stack Developer with a strong passion for
               crafting innovative software solutions. With hands-on experience
