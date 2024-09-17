@@ -1,5 +1,5 @@
 import React from "react";
-import Gio from "../Assets/PhotoMoi.JPG";
+import Gio from "../Assets/moi2.jpg";
 import { motion } from "framer-motion";
 
 const container = (delay) => ({
@@ -54,29 +54,26 @@ const Hero = () => {
               frameworks and methodologies, constantly improving my proficiency.
               Currently, I am pursuing my studies at Epitech Paris, anticipating
               graduation in August 2025.
-              <br />
-              This educational journey complements my practical experience,
-              providing me with a comprehensive understanding of software
-              development principles and best practices. I am eager to leverage
-              my skills and knowledge in a new opportunity where I can
-              contribute to exciting projects, collaborate with talented
-              developers, and make a meaningful impact in the field of
-              technology.
             </motion.p>
           </div>
         </div>
         <div className="w-96 lg:w-1/2 m-auto">
-          <div className="relative flex justify-center rounded-xl">
+          <div className="relative flex justify-center">
             <motion.img
-              initial={{ x: 100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 1, delay: 1.2 }}
-              className="rounded-3xl w-96"
+              initial={{ x: 100, opacity: 0, scale: 0.8 }}
+              animate={{ x: 0, opacity: 1, scale: 1 }}
+              transition={{ duration: 1, delay: 1.2, ease: "easeInOut" }}
+              whileHover={{
+                scale: 1.05,
+                boxShadow: "0px 10px 20px rgba(0, 0, 0, 0.3)",
+              }}
+              className="rounded-full w-96 h-96 object-cover border-4 border-white shadow-lg"
               src={Gio}
               alt="Doroftei David Giovanni"
               onContextMenu={preventContextMenu}
               draggable="false"
             />
+
             <div className="absolute top-0 left-0 w-full h-full bg-transparent"></div>
           </div>
         </div>
