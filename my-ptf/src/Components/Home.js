@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <div className="min-h-screen bg-black">
       <Navbar />
-      <div className="xl:pt-20 xl:px-28 p-10">
+      <div className="xl:pt-20 xl:px-28 p-10 relative">
         <Hero />
         <Currently />
         <About />

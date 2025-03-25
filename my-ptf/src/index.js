@@ -8,11 +8,14 @@ import Crypto from "./Assets/Crypto.jpg";
 import Travel from "./Assets/Travel.jpg";
 import Restaurant from "./Assets/Restaurant.png";
 import CarReservation from "./Assets/CarReservation.jpg";
-import { FaGithub } from "react-icons/fa";
+import Particles from "./Components/Particles";
+import GlowCursor from "./Components/GlowCursor";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
+    <Particles />
+    <GlowCursor />
     <App />
   </React.StrictMode>
 );
@@ -50,11 +53,6 @@ export const PROJECTS = [
     description:
       "I developed a dashboard website that integrates multiple APIs, providing users with comprehensive and real-time data visualization and analytics.",
     technologies: ["React", "Tailwind", "Gradle", "PHP"],
-    lien: [
-      <a href="https://github.com/David-giovanni/car_reservation">
-        <FaGithub icon={FaGithub} className="" />
-      </a>,
-    ],
   },
   {
     title: "Cryptocurrency Website / Epitech",
